@@ -44,4 +44,9 @@ app.all("/*", function (req, res) {
 
 
 
-app.listen(4000)
+app.listen(80,(e)=>{
+    if(e){
+        return console.error(e)
+    }
+    console.log('Server running on port 80')
+})
