@@ -1,0 +1,18 @@
+{
+  "name": "vpn-server",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "repository": "https://github.com/awasthishubh/vpn-server",
+  "author": "awasthishubh",
+  "private": false,
+  "scripts": {
+    "start": "node index.js"
+  },
+  "dependencies": {
+    "body-parser": "^1.18.3",
+    "cookie-parser": "^1.4.4",
+    "express": "^4.16.4",
+    "http-proxy": "^1.17.0"
+  }
+}

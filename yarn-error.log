@@ -1,0 +1,44 @@
+Arguments: 
+  /home/shubh/.nvm/versions/node/v10.15.0/bin/node /home/shubh/.nvm/versions/node/v10.15.0/bin/yarn add express, body-parser, http-proxy
+
+PATH: 
+  /home/shubh/.nvm/versions/node/v10.15.0/bin:/home/shubh/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin
+
+Yarn version: 
+  1.13.0
+
+Node version: 
+  10.15.0
+
+Platform: 
+  linux x64
+
+Trace: 
+  Error: https://registry.yarnpkg.com/express,: Not found
+      at Request.params.callback [as _callback] (/home/shubh/.nvm/versions/node/v10.15.0/lib/node_modules/yarn/lib/cli.js:66255:18)
+      at Request.self.callback (/home/shubh/.nvm/versions/node/v10.15.0/lib/node_modules/yarn/lib/cli.js:129397:22)
+      at Request.emit (events.js:182:13)
+      at Request.<anonymous> (/home/shubh/.nvm/versions/node/v10.15.0/lib/node_modules/yarn/lib/cli.js:130369:10)
+      at Request.emit (events.js:182:13)
+      at IncomingMessage.<anonymous> (/home/shubh/.nvm/versions/node/v10.15.0/lib/node_modules/yarn/lib/cli.js:130291:12)
+      at Object.onceWrapper (events.js:273:13)
+      at IncomingMessage.emit (events.js:187:15)
+      at endReadableNT (_stream_readable.js:1094:12)
+      at process._tickCallback (internal/process/next_tick.js:63:19)
+
+npm manifest: 
+  {
+    "name": "vpn-server",
+    "version": "1.0.0",
+    "main": "index.js",
+    "license": "MIT",
+    "repository": "https://github.com/awasthishubh/vpn-server",
+    "author": "awasthishubh",
+    "private": false
+  }
+
+yarn manifest: 
+  No manifest
+
+Lockfile: 
+  No lockfile
