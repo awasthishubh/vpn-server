@@ -6,7 +6,7 @@ var cookieParser = require('cookie-parser')
 var bodyParser = require('body-parser')
 var util = require('util')
 const chalk = require('chalk');
-
+const tmp=
 app.use(cookieParser())
 
 app.use(bodyParser.urlencoded({ extended: true }));
@@ -35,14 +35,7 @@ app.all("/*", function (req, res) {
         });
     }
     else {
-        res.send(`
-        <form action="/sethostaddr" method="post">
-            <input type="text" name="host" required/><br/>
-            US<input type="radio" name="reg" value="us" required/><br/>
-            EU<input type="radio" name="reg" value="uk" required/><br>
-            <input type="submit"/>
-        </form>
-        `)
+        res.sendFile(__dirname+'/view.html')
 
     }
 });

@@ -1,0 +1,44 @@
+<style>
+body{
+        display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+form{
+        width: 300px;
+    max-width: 90%;
+    text-align: center;
+    padding: 10px;
+    border: 3px solid black;
+    position: relative;
+    padding-bottom: 50px;
+}
+
+input[type=text]{
+    padding: 10px;
+    font-size: 20px;
+    width: 100%;
+    text-align:center;
+}
+
+input[type=submit]{
+    width: 100%;
+    border: none;
+    padding: 10px;
+    font-weight: 900;
+    bottom: 0;
+    left: 0;
+    position: absolute;
+    cursor: pointer;
+}
+
+</style>
+<body>
+<h1>Proxy Server</h1>
+<form action="/sethostaddr" method="post">
+            <input type="text" name="host" required placeholder="Host address"/><br/><br/>
+            US<input type="radio" name="reg" value="us" required/><br/>
+            EU<input type="radio" name="reg" value="uk" required/><br>
+            <input type="submit"/>
+        </form>
